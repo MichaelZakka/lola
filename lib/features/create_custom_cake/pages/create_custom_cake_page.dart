@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:lola_app/common/constants/app_colors.dart';
+import 'package:lola_app/common/constants/end_points.dart';
 import 'package:lola_app/common/utils/hex_color.dart';
 import 'package:lola_app/common/widgets/custom_appbar.dart';
 import 'package:lola_app/common/widgets/custom_button.dart';
@@ -24,6 +25,7 @@ class CreateCustomCakePage extends GetView<CustomCakeController> {
   Widget build(BuildContext context) {
     Get.put(CustomCakeController());
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: CustomAppBar(
         title: 'Custom Cake',
         hasLeading: true,
@@ -86,13 +88,13 @@ class CreateCustomCakePage extends GetView<CustomCakeController> {
                               return controller.selectedShape.value == null
                                   ? Container()
                                   : CachedNetworkImage(
-                                      imageUrl: controller
+                                      imageUrl: EndPoints.imageBaseUrl + controller
                                           .selectedShape.value!.image!);
                             case CustomCakeLayout.flavor:
                               return controller.selectedFlavor.value == null
                                   ? Container()
                                   : CachedNetworkImage(
-                                      imageUrl: controller
+                                      imageUrl: EndPoints.imageBaseUrl + controller
                                           .selectedFlavor.value!.image!);
                             case CustomCakeLayout.color:
                               return Container(
@@ -105,7 +107,7 @@ class CreateCustomCakePage extends GetView<CustomCakeController> {
                               return controller.selectedTopping.value == null
                                   ? Container()
                                   : CachedNetworkImage(
-                                      imageUrl: controller
+                                      imageUrl: EndPoints.imageBaseUrl + controller
                                           .selectedTopping.value!.image!);
                             case CustomCakeLayout.extra:
                               return Container(

@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:lola_app/common/constants/end_points.dart';
 
 class ColumnTextWidget extends StatelessWidget {
   final String image;
@@ -23,7 +24,7 @@ class ColumnTextWidget extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
             child: CachedNetworkImage(
-              imageUrl: image,
+              imageUrl: EndPoints.imageBaseUrl + image,
               fit: BoxFit.contain,
             ),
           ),

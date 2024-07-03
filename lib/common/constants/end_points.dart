@@ -1,6 +1,6 @@
 class EndPoints {
-  static const String baseUrl = 'http://192.168.43.181:8080/api/';
-  static const String imageBaseUrl = 'http://192.168.43.181:8080/images/';
+  static const String baseUrl = 'http://192.168.60.124:8080/api/';
+  static const String imageBaseUrl = 'http://192.168.60.124:8080/images/';
   static const String loginUrl = 'login';
   static const String registerUrl = 'register';
   static const String logoutUrl = 'logout';

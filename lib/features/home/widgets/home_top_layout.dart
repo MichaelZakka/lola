@@ -14,7 +14,7 @@ class HomeTopLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 120.h,
+      height: 125.h,
       decoration: BoxDecoration(
         color: AppColors.primaryColor.withOpacity(0.5),
       ),

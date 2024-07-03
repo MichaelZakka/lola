@@ -30,6 +30,7 @@ class AppTheme {
       // scaffoldBackgroundColor: AppColors.whiteColor,
       // colorScheme: ColorScheme.fromSeed(seedColor: kPrimaryColor),
       textTheme: TextTheme(
+        
         labelLarge: TextStyle(
           fontSize: 16.sp,
           fontFamily: "Honey Crepes",
@@ -40,6 +41,7 @@ class AppTheme {
           fontWeight: FontWeight.w500,
           fontSize: 14.sp,
         ),
+      
         labelSmall: TextStyle(
           fontFamily: CacheProvider.getAppLocale() == "en" ||
                   CacheProvider.getAppLocale() == null

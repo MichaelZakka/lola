@@ -42,6 +42,7 @@ class CustomCakeModel {
     topping = MutualFeaturesModel.fromJson(map['custom_cake']['topping']);
     extraText = map['custom_cake']['text'];
     price = double.parse(map['custom_cake']['price']);
+    image = map['custom_cake']['image'];
     quantity = map['quantity'];
   }
 
